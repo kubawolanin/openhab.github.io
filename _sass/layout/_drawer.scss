@@ -1,0 +1,30 @@
+.oh-drawer {
+  border-right: none;
+}
+
+.oh-drawer-separator {
+  height: 1px;
+  background-color: #dcdcdc;
+  margin: 8px 0;
+}
+
+.oh-drawer .mdl-navigation__link.mdl-navigation__link {
+  font-size: 14px;
+  color: #757575;
+}
+
+.oh-drawer span.mdl-navigation__link.mdl-navigation__link {
+  color: var(--deep-orange-700);
+}
+
+.oh-drawer .mdl-layout-title {
+  position: relative;
+  background: var(--deep-orange-700);
+  height: 160px;
+}
+
+.oh-drawer .oh-logo-image {
+  position: absolute;
+  bottom: 33px;
+  height: 94px;
+}

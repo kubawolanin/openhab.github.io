@@ -1,0 +1,30 @@
+.oh-ribbon {
+    width: 100%;
+    height: 40vh;
+    background-color: var(--deep-orange-700);
+    -webkit-flex-shrink: 0;
+    -ms-flex-negative: 0;
+    flex-shrink: 0;
+}
+
+.oh-page {
+    margin-top: -35vh;
+    -webkit-flex-shrink: 0;
+    -ms-flex-negative: 0;
+    flex-shrink: 0;
+
+    &__content {
+        @extend .mdl-color--white;
+        @extend .mdl-shadow--4dp;
+        @extend .mdl-color-text--grey-800;
+        @extend .mdl-cell;
+
+        border-radius: 2px;
+        padding: 80px 56px;
+        margin-bottom: 80px;
+    }
+
+    &__crumbs {
+        @extend .mdl-color-text--grey-500;
+    }
+}

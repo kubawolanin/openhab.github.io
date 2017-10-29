@@ -1,0 +1,56 @@
+.oh-header {
+  overflow: visible;
+  background-color: white;
+}
+
+.oh-mobile-title {
+  display: none !important;
+
+  @media (max-width: 900px) {
+    display: block !important;
+    position: absolute;
+    left: calc(50% - 70px);
+    top: 12px;
+    transition: opacity 0.2s cubic-bezier(0.4, 0, 0.2, 1);
+  }
+}
+
+.oh-title {
+  @media (max-width: 900px) {
+    display: none !important;
+  }
+}
+
+.oh-logo-image {
+  height: 40px;
+  width: 145px;
+}
+
+.oh-header .material-icons {
+  color: var(--muted-gray) !important;
+}
+
+.oh-header .mdl-layout__drawer-button {
+  background: transparent;
+  color: var(--muted-gray);
+}
+
+.oh-header .mdl-navigation__link {
+  color: #757575;
+  font-weight: 700;
+  font-size: 14px;
+}
+
+.oh-header .oh-search-box .mdl-textfield__input {
+  color: rgba(0, 0, 0, 0.87);
+}
+
+.oh-header .mdl-menu__container {
+  z-index: 50;
+  margin: 0 !important;
+}
+
+.oh-header .mdl-textfield--expandable {
+  width: auto;
+}
+

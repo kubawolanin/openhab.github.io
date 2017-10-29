@@ -1,0 +1,294 @@
+.oh-fab {
+  position: absolute;
+  right: 20%;
+  bottom: -26px;
+  z-index: 3;
+  background: var(--deep-orange-700) !important;
+  color: white !important;
+}
+
+.oh-be-together-section {
+    position: relative;
+    height: 600px;
+    width: auto;
+    background-color: #f3f3f3;
+    // background: url('../images/video-bg.png') center center no-repeat;
+    background-size: cover;
+}
+
+.logo-font {
+    font-family: 'Roboto', 'Helvetica', 'Arial', sans-serif;
+    line-height: 1;
+    color: var(--muted-gray);
+    font-weight: 500;
+}
+
+.oh-slogan {
+    font-size: 60px;
+    padding-top: 160px;
+}
+
+.oh-sub-slogan {
+    font-size: 21px;
+    padding-top: 24px;
+}
+
+.oh-create-character {
+    font-size: 21px;
+    padding-top: 200px;
+}
+
+.oh-create-character a {
+    text-decoration: none;
+    color: var(--muted-gray);
+    font-weight: 300;
+}
+
+.oh-screen-section {
+    position: relative;
+    padding-top: 60px;
+    padding-bottom: 80px;
+}
+
+.oh-screens {
+    text-align: right;
+    width: 100%;
+    white-space: nowrap;
+    overflow-x: auto;
+}
+
+.oh-screen {
+    text-align: center;
+}
+
+.oh-screen .oh-link {
+    margin-top: 16px;
+    display: block;
+    z-index: 2;
+}
+
+.oh-image-link {
+    text-decoration: none;
+}
+
+.oh-wear {
+    display: inline-block;
+    width: 160px;
+    margin-right: 32px;
+}
+
+.oh-wear .oh-screen-image {
+    width: 40%;
+    z-index: 1;
+}
+
+.oh-phone {
+    display: inline-block;
+    width: 64px;
+    margin-right: 48px;
+}
+
+.oh-phone .oh-screen-image {
+    width: 100%;
+    z-index: 1;
+}
+
+.oh-tablet {
+    display: inline-block;
+    width: 110px;
+    margin-right: 64px;
+}
+
+.oh-tablet .oh-screen-image {
+    width: 100%;
+    z-index: 1;
+}
+
+.oh-tablet .oh-link {
+    display: block;
+    z-index: 2;
+}
+
+.oh-tv {
+    display: inline-block;
+    width: 300px;
+    margin-right: 80px;
+}
+
+.oh-tv .oh-screen-image {
+    width: 100%;
+    z-index: 1;
+}
+
+.oh-auto {
+    display: inline-block;
+    width: 300px;
+    overflow: hidden;
+}
+
+.oh-auto .oh-screen-image {
+    display: block;
+    height: 300px;
+    z-index: 1;
+}
+
+.oh-wear-section {
+    position: relative;
+    background: url('assets/images/wear.png') center top no-repeat;
+    background-size: cover;
+    height: 800px;
+}
+
+.oh-wear-band {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    text-align: center;
+    background-color: #37474f;
+}
+
+.oh-wear-band-text {
+    max-width: 800px;
+    margin-left: 25%;
+    padding: 24px;
+    text-align: left;
+    color: white;
+}
+
+.oh-wear-band-text p {
+    padding-top: 8px;
+}
+
+.oh-link {
+    text-decoration: none;
+    color: var(--deep-orange-700) !important;
+}
+
+.oh-link:hover {
+    color: var(--deep-orange-500) !important;
+}
+
+.oh-link .material-icons {
+    position: relative;
+    top: -1px;
+    vertical-align: middle;
+}
+
+.oh-alt-link {
+    text-decoration: none;
+    color: var(--deep-orange-500) !important;
+    font-size: 16px;
+}
+
+.oh-alt-link:hover {
+    color: var(--deep-orange-700) !important;
+}
+
+.oh-alt-link .material-icons {
+    position: relative;
+    top: 6px;
+}
+
+.oh-customized-section {
+    text-align: center;
+}
+
+.oh-customized-section-text {
+    max-width: 500px;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 80px 16px 0 16px;
+}
+
+.oh-customized-section-text p {
+    padding-top: 16px;
+}
+
+.oh-customized-section-image {
+    background: url('assets/images/devices.jpg') center top no-repeat;
+    background-size: cover;
+    height: 400px;
+}
+
+.oh-more-section {
+    padding: 80px 0;
+    max-width: 1044px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.oh-more-section .oh-section-title {
+    margin-left: 12px;
+    padding-bottom: 24px;
+}
+
+.oh-card-container .mdl-card__media {
+    overflow: hidden;
+    background: transparent;
+}
+
+.oh-card-container .mdl-card__media img {
+    width: 100%;
+}
+
+.oh-card-container .mdl-card__title {
+    background: transparent;
+    height: auto;
+}
+
+.oh-card-container .mdl-card__title-text {
+    color: black;
+    height: auto;
+}
+
+.oh-card-container .mdl-card__supporting-text {
+    height: auto;
+    color: black;
+    padding-bottom: 56px;
+}
+
+.oh-card-container .mdl-card__actions {
+    position: absolute;
+    bottom: 0;
+}
+
+.oh-card-container .mdl-card__actions a {
+    border-top: none;
+    font-size: 16px;
+}
+
+@media (max-width: 900px) {
+    .oh-be-together-section {
+        height: 350px;
+    }
+
+    .oh-slogan {
+        font-size: 26px;
+        margin: 0 16px;
+        padding-top: 24px;
+    }
+
+    .oh-sub-slogan {
+        font-size: 16px;
+        margin: 0 16px;
+        padding-top: 8px;
+    }
+
+    .oh-create-character {
+        padding-top: 200px;
+        font-size: 16px;
+    }
+
+    .oh-create-character img {
+        height: 12px;
+    }
+
+    .oh-fab {
+        display: none;
+    }
+
+    .oh-wear-band-text {
+        margin-left: 0;
+        padding: 16px;
+    }
+}

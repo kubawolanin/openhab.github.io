@@ -1,0 +1,68 @@
+.oh-navigation-container {
+  /* Simple hack to make the overflow happen to the left instead... */
+  direction: rtl;
+  order: 1;
+  width: 500px;
+  transition: opacity 0.2s cubic-bezier(0.4, 0, 0.2, 1), width 0.2s cubic-bezier(0.4, 0, 0.2, 1);
+
+  @media (max-width: 900px) {
+    display: none;
+  }
+}
+
+.oh-navigation {
+  /* ... and now make sure the content is actually LTR */
+  direction: ltr;
+  justify-content: flex-end;
+  width: 800px;
+}
+
+.oh-navigation .mdl-navigation__link {
+  display: inline-block;
+  height: 60px;
+  line-height: 68px;
+  background-color: transparent !important;
+  border-bottom: 4px solid transparent;
+}
+
+.oh-navigation .mdl-navigation__link:hover {
+  border-bottom: 4px solid var(--deep-orange-700);
+}
+
+.oh-search-box.is-focused+.oh-navigation-container {
+  opacity: 0;
+  width: 100px;
+}
+
+.oh-search-box {
+  order: 2;
+  margin-left: 16px;
+  margin-right: 16px;
+}
+
+@media (max-width: 900px) {
+  /* WebViews in iOS 9 break the "~" operator, and WebViews in OS X 10.10 break
+   consecutive "+" operators in some cases. Therefore, we need to use both
+   here to cover all the bases. */
+  .openhab.oh-search-box.is-focused~.oh-mobile-title,
+  .oh-search-box.is-focused+.oh-navigation-container+.oh-mobile-title {
+      opacity: 0;
+  }
+
+  .oh-search-box.is-focused {
+      width: calc(100% - 48px);
+  }
+
+  .oh-search-box .mdl-textfield__expandable-holder {
+      width: 100%;
+  }
+}
+
+.oh-more-button {
+  order: 3;
+
+  @media (max-width: 900px) {
+    display: none;
+  }
+}
+
