@@ -6,7 +6,7 @@
     {% include header.html %}
     {% include drawer.html %}
 
-    <main class="oh-content mdl-layout__content">
+    <main class="oh-content mdl-layout__content {% if pageurl[1] != nil %}oh-content__page{% endif %}">
       <a name="top"></a>
       {{ content }}
       {% include footer.html %}

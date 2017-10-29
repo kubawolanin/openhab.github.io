@@ -31,6 +31,7 @@
 }
 
 .oh-header .mdl-layout__drawer-button {
+  @extend .mdl-cell--hide-desktop;
   background: transparent;
   color: var(--muted-gray);
 }

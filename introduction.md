@@ -1,5 +1,5 @@
 ---
-layout: page-sidebar
+layout: page
 title: Introduction
 ---
 ## Introduction
