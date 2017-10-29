@@ -1,46 +1,78 @@
-  <!-- page content -->
-    <!-- footer -->
-    <footer class="footer1">
-        <div class="container" id="footer">
-            <div class="row">
-                <div class="span6 timelineWidget">
-                    <h2>Latest Tweets</h2>
-                    <hr>
-                    <div id="twitterFrame"> <a class="twitter-timeline" href="https://twitter.com/openHAB?height=250" data-widget-id="416300026369810432"  data-tweet-limit="2" data-theme="dark" data-chrome="nofooter noheader transparent" >Tweets by @openHAB</a>
-                        <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+"://platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script>
-                    </div>
-                </div>
-                <div class="span3 contactWidget">
-                    <h2>Support openHAB</h2>
-                    <hr>
-					<p>The <a href="http://www.openhabfoundation.org/">openHAB Foundation</a> promotes and supports the openHAB project - come and join forces!
-                                        <form action="https://www.paypal.com/cgi-bin/webscr" method="post" target="_top">
-                                            <input type="hidden" name="cmd" value="_s-xclick">
-                                            <input type="hidden" name="hosted_button_id" value="KPVP4NJESFENY">
-                                            <input type="image" style="border:none; background:transparent" src="https://www.paypalobjects.com/en_US/i/btn/btn_donateCC_LG_global.gif" border="0" name="submit" alt="PayPal – The safer, easier way to pay online!">
-                                            <img alt="" border="0" src="https://www.paypalobjects.com/de_DE/i/scr/pixel.gif" width="1" height="1">
-                                            </form>
-                </div>
-                <div class="span3 sociallWidget">
-                    <h2>Follow Us</h2>
-                    <hr>
-                    <ul class="socialNetwork nav">
-                        <li><a href="https://www.facebook.com/pages/OpenHAB/153141161476518" class="icon-facebook socialIcon tips"  title="follow us on Facebook"><span>facebook</span></a></li>
-                        <li><a href="http://twitter.com/openHAB" class="icon-twitter-bird socialIcon tips"  title="follow us on Twitter"><span>twitter</span></a></li>
-                        <li><a href="https://plus.google.com/u/0/b/112853105449135193256/112853105449135193256/posts" class="icon-gplus socialIcon tips"  title="follow us on Google +"><span>google +</span></a></li>
-                        <li><a href="http://www.youtube.com/playlist?list=PLGlxCdrGUagz6lfgo9SlNLhdwI4la_VSv" class="icon-videocam socialIcon tips" title="follow us on Youtube"><span>youtube</span></a></li>
-                    </ul>
-                </div>
-            </div>
+<footer class="oh-footer">
+    <div>
+        <div class="oh-footer__social">
+            <a href="http://github.com/openhab" target="_blank" title="GitHub">
+            <i class="icon-github"></i>
+            </a> &nbsp;
+            <a href="http://twitter.com/openHAB" target="_blank" title="Twitter">
+            <i class="icon-twitter"></i>
+            </a> &nbsp;
+            <a href="https://plus.google.com/u/0/+OpenhabOrg" target="_blank" title="Google+">
+            <i class="icon-google-plus"></i>
+            </a> &nbsp;
+            <a href="https://www.facebook.com/oh-153141161476518/" target="_blank" title="Facebook">
+            <i class="icon-facebook"></i>
+            </a> &nbsp;
+            <a href="https://www.youtube.com/channel/UC7OK88DW0La_BJlcXZg8ydQ" target="_blank" title="YouTube">
+            <i class="icon-youtube"></i>
+            </a>
         </div>
-    </footer>
-    <footer class="footer2" id="footerRights">
-        <div class="container">
-            <div class="row">
-                <div class="span12">
-                    <p>Copyright © 2017 by the <a href="https://github.com/openhab">openHAB Community</a> and the <a href="http://www.openhabfoundation.org/">openHAB Foundation e.V.</a> - <a href="/imprint.html">Imprint</a> - <a href="/privacy.html">Privacy Policy</a></p>
-                </div>
-            </div>
+        <div class="oh-footer__top">
+            <a href="#top">
+                Back to Top
+                <i class="material-icons">expand_less</i>
+            </a>
         </div>
-    </footer>
-    <!-- footer -->
+    </div>
+
+    <div class="oh-footer__links">
+        <div>
+        <input type="checkbox" checked="">
+        <h1>openHAB</h1>
+        <ul>
+            <li><a href="#">About</a></li>
+            <li><a href="http://www.openhabfoundation.org/">openHAB Foundation</a></li>
+            <li><a href="#">Privacy Policy</a></li>
+            <li><a href="#">Imprint</a></li>
+        </ul>
+        </div>
+        <div>
+            <input type="checkbox" checked="">
+            <h1>&nbsp;</h1>
+            <ul>
+            <li><a href="#">Documentation</a></li>
+            <li><a href="#">Downloads</a></li>
+            <li><a href="#">Community</a></li>
+            </ul>
+        </div>
+        <div>
+        <input type="checkbox" checked="">
+        <h1>For Developers</h1>
+        <ul>
+            <li><a href="http://docs.openhab.org/developers/">Developer Guide</a></li>
+            <li><a href="https://github.com/openhab">GitHub</a></li>
+            <li><a href="https://gitter.im/openhab">Gitter</a></li>
+            <li><a href="https://bountysource.com/teams/openhab">BountySource</a></li>
+            <li><a href="https://community.openhab.org/c/organisation/code">Community</a></li>
+        </ul>
+        </div>
+        <div>
+            <input type="checkbox" checked="">
+            <h1>Support openHAB</h1>
+            <ul>
+            <li>The openHAB Foundation promotes and supports the openHAB project - come and join forces!</li>
+            <form action="https://www.paypal.com/cgi-bin/webscr" method="post" target="_top">
+                <input type="hidden" name="cmd" value="_s-xclick">
+                <input type="hidden" name="hosted_button_id" value="KPVP4NJESFENY">
+                <input type="image" style="border:none; float: right; background:transparent" src="https://www.paypalobjects.com/en_US/i/btn/btn_donateCC_LG_global.gif" border="0" name="submit" alt="PayPal – The safer, easier way to pay online!">
+                <img alt="" border="0" src="https://www.paypalobjects.com/de_DE/i/scr/pixel.gif" width="1" height="1" hidden="" style="display: none !important;">
+                </form>
+            </ul>
+        </div>
+    </div>
+
+    <div class="oh-footer__copy">
+        <hr>
+        <p>Copyright © 2017 by the <a href="https://github.com/openhab">openHAB Community</a> and the <a href="http://www.openhabfoundation.org/">openHAB Foundation e.V.</a</p>
+    </div>
+</footer>

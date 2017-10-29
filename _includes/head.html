@@ -1,19 +1,39 @@
 <head>
-  <meta charset='utf-8'>{% assign current = page.url | downcase | split: '/' %}
-  <title>{{ site.title }}{% if current[1] != nil and current[1] != 'index.html' %}{% if current[1] == 'getting-started' %}{% assign current = 'Getting Started' %} - {{ current }}{% endif %}{% if current[1] == 'features' %}{% assign current = 'Features' %} - {{ current }}{% endif %}{% if page.title != current %} - {{ page.title }}{% endif %}{% endif %}</title>
+    <meta charset="utf-8">{% assign current = page.url | downcase | split: '/' %}
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="description" content="{{ site.description }}">
+    <meta name="author" content="openHAB UG (haftungsbeschränkt)">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>openHAB - empowering the smart home</title>
 
-  <meta name='description' content='{{ site.description }}'>
-  <meta name='author' content='openHAB UG (haftungsbeschränkt)'>
-  <meta name='viewport' content='width=device-width, initial-scale=1.0'>
+    <!-- Disable tap highlight on IE -->
+    <meta name="msapplication-tap-highlight" content="no">
 
-  <link rel='stylesheet' type='text/css' href='//fonts.googleapis.com/css?family=Open+Sans:400,300,800'>
-  <link rel='stylesheet' type='text/css' href='//maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css'>
-  <link rel='stylesheet' type='text/css' href='/assets/revolution-slider/css/settings.css' media='screen'>
-  <link rel='stylesheet' type='text/css' href='/assets/hoverdir/css/style.css'>
-  <link rel='stylesheet' type='text/css' href='/css/main.css'>
+    <!-- Web Application Manifest -->
+    <link rel="manifest" href="manifest.json">
 
-  <script src='//cdnjs.cloudflare.com/ajax/libs/modernizr/2.8.3/modernizr.min.js'></script>
+    <!-- Add to homescreen for Chrome on Android -->
+    <meta name="mobile-web-app-capable" content="yes">
+    <meta name="application-name" content="openHAB - empowering the smart home">
+    <link rel="icon" sizes="192x192" href="images/touch/chrome-touch-icon-192x192.png">
 
-  <link rel='shortcut icon' href='/favicon.ico' type='image/x-icon'>
-  <link rel='icon' href='/favicon.ico' type='image/x-icon'>
-  <link rel='apple-touch-icon' href='/apple-icon.png'>
+    <!-- Add to homescreen for Safari on iOS -->
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <meta name="apple-mobile-web-app-title" content="openHAB - empowering the smart home">
+    <link rel="apple-touch-icon" href="images/touch/apple-touch-icon.png">
+
+    <!-- Tile icon for Win8 (144x144 + tile color) -->
+    <meta name="msapplication-TileImage" content="images/touch/ms-touch-icon-144x144-precomposed.png">
+    <meta name="msapplication-TileColor" content="#e64a19">
+
+    <!-- Color the status bar on mobile devices -->
+    <meta name="theme-color" content="#e64a19">
+
+    <!-- Roboto font & Material Design icons -->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:regular,bold,italic,thin,light,bolditalic,black,medium&amp;lang=en">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+
+    <!-- Main styles -->
+    <link rel="stylesheet" href="styles/main.css">
+</head>
