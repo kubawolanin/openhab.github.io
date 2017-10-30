@@ -1,6 +1,57 @@
+.oh-footer-nav {
+  background-color: rgb(66,66,66);
+  padding: 16px 30px;
+
+  &__link {
+    width: 50%;
+    padding-top: 1rem;
+    padding-bottom: .8rem;
+    -webkit-transition: opacity .25s;
+    transition: opacity .25s;
+    color: #fff;
+    text-decoration: none;
+    display: table;
+
+    &:hover {
+      opacity: .8;
+    }
+
+    &--prev {
+      float: left;
+    }
+
+    &--next {
+      float: right;
+      text-align: right;
+      box-shadow: inset 1px 0 0 rgba(255,255,255,.2);
+    }
+
+    i {
+      font-size: 3em;
+      display: table-cell;
+      vertical-align: top;
+      width: 0;
+      position: relative;
+    }
+  }
+
+  &__title {
+    font-weight: 600;
+    font-size: 1.4em;
+    width: 100%;
+    display: table-cell;
+  }
+
+  &__direction {
+    display: block;
+    font-size: initial;
+    font-weight: 300;
+  }
+}
 
 .oh-footer {
   @extend .mdl-mega-footer;
+  background-color: rgba(0,0,0,.87);
   position: relative;
 }
 

@@ -1,0 +1,17 @@
+<!doctype html>
+<html lang="en">
+{% include head.html %}
+<body>
+  <div class="mdl-layout mdl-js-layout mdl-layout--fixed-header mdl-layout--fixed-drawer">
+    {% include header.html %}
+    {% include doc-drawer.html %}
+
+    <main class="oh-content mdl-layout__content oh-content__page">
+      <a name="top"></a>
+      {{ content }}
+      {% include footer.html %}
+    </main>
+  </div>
+
+  {% include footer-scripts.html %}
+</html>

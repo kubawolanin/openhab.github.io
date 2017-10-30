@@ -7,8 +7,11 @@
     flex-shrink: 0;
 }
 
-.oh-page {
+.oh-ribbon ~ .oh-page {
     margin-top: -35vh;
+}
+
+.oh-page {
     -webkit-flex-shrink: 0;
     -ms-flex-negative: 0;
     flex-shrink: 0;
