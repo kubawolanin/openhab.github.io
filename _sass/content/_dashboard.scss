@@ -1,11 +1,18 @@
 .oh-card-square {
+    @extend .mdl-card;
+    @extend .mdl-shadow--2dp;
+
     margin: 15px;
-}
+    width: calc(25% - 30px);
+    transition: box-shadow .2s;
 
-.oh-card-square:hover {
-    background: var(--deep-orange-500);
+    &:hover,
+    &:active,
+    &:focus {
+        @extend .mdl-shadow--16dp;
+    }
 
-    .mdl-button {
-        color: #fff;
+    .mdl-card__tile {
+        background-size: cover;
     }
 }
